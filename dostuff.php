@@ -22,7 +22,7 @@
 	for($i = 0; $i < $num_fields; $i++){
 		print $keys[$i] . " ";
 	} // prints out column names
-	print "<br />" //adds line break after column names
+	print "<br />"; //adds line break after column names
 	for($row_num=0; $row_num < $num_rows; $row_num++){
 		$values = array_values($row); // get values of the key/values pairs
 		for($i=0; $i < $num_fields; $i++){
