@@ -1,13 +1,13 @@
 <?php
 	$name = $_GET["name"];
 	$desc = $_GET["desc"];
-	$price = $_GET["year"];
+	$price = $_GET["price"];
 	$qty = $_GET["qty"];
 	
 	$query  = "INSERT INTO product VALUES(1, $name, $desc, $price, $qty)";
 	//run query to get last row, find the vette id, and add 1 in order to add to last row on the table
 	
-	$my_connection = mysqli_connect("localhost", "root", "mountjudah", "sales");
+	$my_connection = mysqli_connect("localhost", "root", "", "sales");
 	//localhost, username, password, database_name ^
 	$result = mysqli_query($my_connection, $query);
 	
